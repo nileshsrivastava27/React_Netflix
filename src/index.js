@@ -25,6 +25,18 @@ function Card(props ) {
 };
 
 
+function ncard(val) {
+  return (
+    <Card 
+      imgsrc = {val.imgscr}
+      title = {val.title}
+      sname = {val.sname}
+      link = {val.links}
+    />
+  )
+};
+
+
 const styles = {
   textAlign: 'center',
   fontFamily: 'sans-serif',
@@ -43,7 +55,7 @@ const styles = {
 ReactDOM.render(
   <>
   <h1 style={styles}>List of Top Netflix Shows in 2023</h1>
-  <Card 
+  {/* <Card 
     imgsrc = {SData[0].imgscr}
     sname = {SData[0].sname}
     link = {SData[0].links}
@@ -62,7 +74,10 @@ ReactDOM.render(
     title = {SData[2].title}
     sname = {SData[2].sname}
     link = {SData[2].links}
-  />
+  /> */}
+
+  {SData.map(ncard)}
+
   </>
   
   

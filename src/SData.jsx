@@ -18,6 +18,13 @@ const SData = [
         links: "https://www.netflix.com/in/title/80192098"
 
     },
+    {
+        sname : "The Witcher",
+        imgscr: "https://i.ytimg.com/vi/ndl1W4ltcmg/maxresdefault.jpg",
+        title: "A Netflix Original Series",
+        links: "https://www.netflix.com/in/title/80189685"
+
+    },
 ];
 
 
